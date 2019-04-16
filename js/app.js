@@ -5,14 +5,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
       rockButton.addEventListener('click', (event) => {
         const playerParag = document.querySelector('#players-choice');
-        // put in a new variable for rock and playerparag can have a sentce .
-        playerParag.textContent = `rock`
+        let gameItem = 'rock';
+        playerParag.textContent = `Player plays: ${gameItem}`;
         const computerParag = document.querySelector('#computers-choice');
-        computerParag.textContent = `${random(arrayOfButtons)}`;
+        computerParag.textContent = `Computer plays: ${random(arrayOfButtons)}`;
         let resultParag = document.querySelector('#result');
-        if (computerParag.textContent === 'paper'){
+        if (computerParag.textContent === 'Computer plays: paper'){
           resultParag.textContent = `You loose!`;
-        }else if(computerParag.textContent === 'rock'){
+        }else if(computerParag.textContent === 'Computer plays: rock'){
           resultParag.textContent = `Play again!`;
         }else{
           resultParag.textContent = 'You win!';
@@ -23,13 +23,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
       paperButton.addEventListener('click', (event) => {
         const playerParag = document.querySelector('#players-choice');
-        playerParag.textContent = `paper`
+        let gameItem = 'paper';
+        playerParag.textContent = `Player plays: paper`
         const computerParag = document.querySelector('#computers-choice');
-        computerParag.textContent = `${random(arrayOfButtons)}`;
+        computerParag.textContent = `Computer plays: ${random(arrayOfButtons)}`;
         let resultParag = document.querySelector('#result');
-        if (computerParag.textContent === 'scissors'){
+        if (computerParag.textContent === 'Computer plays: scissors'){
           resultParag.textContent = `You loose!`;
-        }else if(computerParag.textContent === 'paper'){
+        }else if(computerParag.textContent === 'Computer plays: paper'){
           resultParag.textContent = `Play again!`;
         }else{
           resultParag.textContent = 'You win!';
@@ -40,13 +41,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
       scisoorsButton.addEventListener('click', (event) => {
         const playerParag = document.querySelector('#players-choice');
-        playerParag.textContent = `scissors`
+        let gameItem = 'scissors';
+        playerParag.textContent = `Player plays: scissors`
         const computerParag = document.querySelector('#computers-choice');
-        computerParag.textContent = `${random(arrayOfButtons)}`;
+        computerParag.textContent = `Computer plays: ${random(arrayOfButtons)}`;
         let resultParag = document.querySelector('#result');
-        if (computerParag.textContent === 'rock'){
+        if (computerParag.textContent === 'Computer plays: rock'){
           resultParag.textContent = `You loose!`;
-        }else if(computerParag.textContent === 'scissors'){
+        }else if(computerParag.textContent === 'Computer plays: scissors'){
           resultParag.textContent = `Play again!`;
         }else{
           resultParag.textContent = 'You win!';
