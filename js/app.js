@@ -11,11 +11,11 @@ document.addEventListener('DOMContentLoaded', () => {
         computerParag.textContent = `Computer plays: ${random(arrayOfButtons)}`;
         let resultParag = document.querySelector('#result');
         if (computerParag.textContent === 'Computer plays: paper'){
-          resultParag.textContent = `You loose!`;
+          resultParag.textContent = `Computer wins!`;
         }else if(computerParag.textContent === 'Computer plays: rock'){
-          resultParag.textContent = `Play again!`;
+          resultParag.textContent = `Draw - Play again!`;
         }else{
-          resultParag.textContent = 'You win!';
+          resultParag.textContent = 'Yaaaay, You win! :)';
         }
       });
 
@@ -29,11 +29,11 @@ document.addEventListener('DOMContentLoaded', () => {
         computerParag.textContent = `Computer plays: ${random(arrayOfButtons)}`;
         let resultParag = document.querySelector('#result');
         if (computerParag.textContent === 'Computer plays: scissors'){
-          resultParag.textContent = `You loose!`;
+          resultParag.textContent = `Computer wins!`;
         }else if(computerParag.textContent === 'Computer plays: paper'){
-          resultParag.textContent = `Play again!`;
+          resultParag.textContent = `Draw - Play again!`;
         }else{
-          resultParag.textContent = 'You win!';
+          resultParag.textContent = 'Yaaay, You win!';
         }
       });
 
@@ -47,11 +47,11 @@ document.addEventListener('DOMContentLoaded', () => {
         computerParag.textContent = `Computer plays: ${random(arrayOfButtons)}`;
         let resultParag = document.querySelector('#result');
         if (computerParag.textContent === 'Computer plays: rock'){
-          resultParag.textContent = `You loose!`;
+          resultParag.textContent = `Computer wins!`;
         }else if(computerParag.textContent === 'Computer plays: scissors'){
-          resultParag.textContent = `Play again!`;
+          resultParag.textContent = `Draw - Play again!`;
         }else{
-          resultParag.textContent = 'You win!';
+          resultParag.textContent = 'Yaaay, You win!';
         }
       });
 
